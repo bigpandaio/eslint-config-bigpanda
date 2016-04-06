@@ -1,0 +1,75 @@
+module.exports = {
+    "extends": "airbnb/base",
+    "env": {
+      "es6": true,
+      "node": true,
+      "mocha": true
+    },
+    "rules": {
+      // Overrides
+      "comma-dangle": 0,
+      "radix": 0,
+      "no-param-reassign": 0,
+      "indent": 0,
+      
+      // Auto-fixable
+      "quotes": 1,
+      "object-curly-spacing": 1,
+      "space-before-function-paren": 1,
+      "keyword-spacing": 1,
+      "semi": 1,
+      "no-multi-spaces": 1,
+      "space-in-parens": 1,
+      "array-bracket-spacing": 1,
+      "space-infix-ops": 1,
+      "comma-spacing": 1,
+      "semi-spacing": 1,
+      "no-trailing-spaces": 1,
+      //
+      
+      "max-len": [1, 140],
+      "eqeqeq": 1,
+      "func-names": 1,
+      "object-shorthand": 1,
+      "no-return-assign": 1,
+      "no-confusing-arrow": 1,
+      "no-var": 1,
+      "vars-on-top": 1,
+      "prefer-template": 1,
+      "no-console": 1,
+      "consistent-return": 1,
+      "array-callback-return": 1,
+      "no-else-return": 1,
+      "camelcase": 1,
+      "prefer-const": 1,
+      "block-scoped-var": 1,
+      "no-shadow": 1,
+      "dot-notation": 1,
+      "guard-for-in": 1,
+      "no-loop-func": 1,
+      "prefer-rest-params": 1,
+      "new-cap": 1,
+      "default-case": 1,
+      "padded-blocks": 1,
+      "prefer-arrow-callback": 1,
+      "quote-props": 1,
+      "one-var": 1,
+      "one-var-declaration-per-line": 1,
+      "yoda": 1,
+      "curly": 1,
+      "arrow-body-style": 1,
+      "spaced-comment": 1,
+      "eol-last": 1,
+      "brace-style": 1,
+      "space-before-blocks": 1,
+      "no-multiple-empty-lines": 1,
+      "key-spacing": 1,
+      "no-use-before-define": 1,
+      "no-unneeded-ternary": 1,
+
+      // TODO: turn to errors in the future
+      "no-unused-vars": 1,
+      "wrap-iife": 1,
+      "no-unused-expressions": 1
+    }
+};
