@@ -64,7 +64,7 @@ module.exports = {
       "space-before-blocks": 1,
       "no-multiple-empty-lines": 1,
       "key-spacing": 1,
-      "no-use-before-define": 1,
+      "no-use-before-define": 0,
       "no-unneeded-ternary": 1,
 
       // TODO: turn to errors in the future
