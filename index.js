@@ -11,6 +11,7 @@ module.exports = {
       "radix": 0,
       "no-param-reassign": 0,
       "indent": 0,
+      "no-use-before-define": 0,
       
       // Auto-fixable
       "quotes": 1,
@@ -64,7 +65,6 @@ module.exports = {
       "space-before-blocks": 1,
       "no-multiple-empty-lines": 1,
       "key-spacing": 1,
-      "no-use-before-define": 1,
       "no-unneeded-ternary": 1,
 
       // TODO: turn to errors in the future
