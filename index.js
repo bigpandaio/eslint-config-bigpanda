@@ -12,22 +12,9 @@ module.exports = {
       "no-param-reassign": 0,
       "indent": 0,
       "no-use-before-define": 0,
-      
-      // Auto-fixable
-      "quotes": 1,
-      "object-curly-spacing": 1,
-      "space-before-function-paren": 1,
-      "keyword-spacing": 1,
-      "semi": 1,
-      "no-multi-spaces": 1,
-      "space-in-parens": 1,
-      "array-bracket-spacing": 1,
-      "space-infix-ops": 1,
-      "comma-spacing": 1,
-      "semi-spacing": 1,
-      "no-trailing-spaces": 1,
-      //
-      
+      "no-control-regex": 0,
+
+      // Warnings
       "max-len": [1, 140],
       "eqeqeq": 1,
       "func-names": 1,
@@ -66,6 +53,20 @@ module.exports = {
       "no-multiple-empty-lines": 1,
       "key-spacing": 1,
       "no-unneeded-ternary": 1,
+
+      // Auto-fixable
+      "quotes": 1,
+      "object-curly-spacing": 1,
+      "space-before-function-paren": 1,
+      "keyword-spacing": 1,
+      "semi": 1,
+      "no-multi-spaces": 1,
+      "space-in-parens": 1,
+      "array-bracket-spacing": 1,
+      "space-infix-ops": 1,
+      "comma-spacing": 1,
+      "semi-spacing": 1,
+      "no-trailing-spaces": 1,
 
       // TODO: turn to errors in the future
       "no-unused-vars": 1,
