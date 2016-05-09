@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-bigpanda",
-  "version": "3.4.4",
+  "version": "3.5.0",
   "private": true,
   "repository": {
     "type": "git",
