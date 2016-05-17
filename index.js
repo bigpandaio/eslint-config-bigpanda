@@ -13,6 +13,7 @@ module.exports = {
       "indent": 0,
       "no-use-before-define": 0,
       "no-control-regex": 0,
+      "new-cap": 0,
 
       // Warnings
       "max-len": [1, 140],
@@ -36,7 +37,6 @@ module.exports = {
       "guard-for-in": 1,
       "no-loop-func": 1,
       "prefer-rest-params": 1,
-      "new-cap": 1,
       "default-case": 1,
       "padded-blocks": 1,
       "prefer-arrow-callback": 1,
