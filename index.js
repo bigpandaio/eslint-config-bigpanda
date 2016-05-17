@@ -14,11 +14,11 @@ module.exports = {
       "no-use-before-define": 0,
       "no-control-regex": 0,
       "new-cap": 0,
+      "func-names": 0,
 
       // Warnings
       "max-len": [1, 140],
       "eqeqeq": 1,
-      "func-names": 1,
       "object-shorthand": 1,
       "no-return-assign": 1,
       "no-confusing-arrow": 1,
