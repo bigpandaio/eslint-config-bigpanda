@@ -11,6 +11,7 @@ module.exports = {
       "prefer-template": 0,
       "array-callback-return": 0,
       "prefer-const": 0,
-      "prefer-arrow-callback": 0
+      "prefer-arrow-callback": 0,
+      "func-names": 0
     }
 };
