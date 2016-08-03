@@ -19,7 +19,7 @@ module.exports = {
       "max-len": [1, 140],
       "eqeqeq": 1,
       "func-names": 1,
-      "object-shorthand": 1,
+      "object-shorthand": [1, "never"],
       "no-return-assign": 1,
       "no-confusing-arrow": 1,
       "no-var": 1,
@@ -67,6 +67,7 @@ module.exports = {
       "comma-spacing": 1,
       "semi-spacing": 1,
       "no-trailing-spaces": 1,
+      "arrow-parens": [1, "always"],
 
       // TODO: turn to errors in the future
       "no-unused-vars": 1,
