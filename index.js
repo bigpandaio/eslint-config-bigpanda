@@ -9,16 +9,17 @@ module.exports = {
       // Overrides
       "comma-dangle": 0,
       "radix": 0,
-      "no-param-reassign": 0,
       "indent": 0,
       "no-use-before-define": 0,
       "no-control-regex": 0,
       "new-cap": 0,
+      "eol-last": 1,
 
       // Warnings
       "max-len": [1, 140],
       "eqeqeq": 1,
       "func-names": 1,
+      "no-param-reassign": 1,
       "object-shorthand": [1, "never"],
       "no-return-assign": 1,
       "no-confusing-arrow": 1,
@@ -47,7 +48,6 @@ module.exports = {
       "curly": 1,
       "arrow-body-style": 1,
       "spaced-comment": 1,
-      "eol-last": 1,
       "brace-style": 1,
       "space-before-blocks": 1,
       "no-multiple-empty-lines": 1,
