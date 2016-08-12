@@ -13,7 +13,7 @@ module.exports = {
       "no-use-before-define": 0,
       "no-control-regex": 0,
       "new-cap": 0,
-      "eol-last": 1,
+      "eol-last": 0,
 
       // Warnings
       "max-len": [1, 140],
