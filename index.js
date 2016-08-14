@@ -9,7 +9,6 @@ module.exports = {
       // Overrides
       "comma-dangle": 0,
       "radix": 0,
-      "indent": 0,
       "no-use-before-define": 0,
       "no-control-regex": 0,
       "new-cap": 0,
@@ -21,6 +20,7 @@ module.exports = {
       "func-names": 1,
       "no-param-reassign": 1,
       "object-shorthand": [1, "never"],
+      "indent": [1, 2],
       "no-return-assign": 1,
       "no-confusing-arrow": 1,
       "no-var": 1,

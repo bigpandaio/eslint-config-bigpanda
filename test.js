@@ -6,6 +6,7 @@ module.exports = {
     "proxyquire": true
   },
   "rules": {
-    "no-unused-expressions": "off"
+    "no-unused-expressions": "off",
+    "arrow-body-style": "off"
   }
 }
