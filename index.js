@@ -11,6 +11,8 @@ module.exports = {
       "no-control-regex": 0,
       "new-cap": 0,
       "eol-last": 0,
+      "no-param-reassign": 1,
+      "no-shadow": 1,
       "max-len": [1, 140],
       "arrow-parens": [1, "always"],
       "comma-dangle": [2, "never"],
