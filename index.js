@@ -13,6 +13,9 @@ module.exports = {
       "no-control-regex": 0,
       "new-cap": 0,
       "eol-last": 0,
+      "no-underscore-dangle": 0,
+      "import/no-extraneous-dependencies": 0,
+      "import/no-unresolved": 0,
 
       // Warnings
       "max-len": [1, 140],
@@ -53,6 +56,19 @@ module.exports = {
       "no-multiple-empty-lines": 1,
       "key-spacing": 1,
       "no-unneeded-ternary": 1,
+      "dot-location": 1,
+      "global-require": 1,
+      "block-spacing": 1,
+      "object-property-newline": 1,
+      "newline-per-chained-call": 1,
+      "no-useless-concat": 1,
+      "no-useless-escape": 1,
+      "no-lonely-if": 1,
+      "no-restricted-syntax": 1,
+      "no-extra-boolean-cast": 1,
+      "prefer-spread": 1,
+      "no-path-concat": 1,
+      "import/newline-after-import": 1,
 
       // Auto-fixable
       "quotes": 1,
