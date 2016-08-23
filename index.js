@@ -68,6 +68,10 @@ module.exports = {
       "no-extra-boolean-cast": 1,
       "prefer-spread": 1,
       "no-path-concat": 1,
+      "no-mixed-operators": 1,
+      "operator-assignment": 1,
+      "space-unary-ops": 1,
+      "no-prototype-builtins": 1,
       "import/newline-after-import": 1,
 
       // Auto-fixable
