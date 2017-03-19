@@ -43,13 +43,6 @@ module.exports = {
     "angular/no-http-callback": 1,
     "angular/function-type": [1, "named"],
     "angular/module-setter": 2,
-    "angular/module-getter": 2,
-
-    // After upgrading airbnb style:
-    "no-useless-return": 1,
-    "no-plusplus": 1,
-    "no-multi-assign": 1,
-    "no-bitwise": 1,
-    "import/no-dynamic-require": 1
+    "angular/module-getter": 2
   }
 };

@@ -92,6 +92,13 @@ module.exports = {
       // TODO: turn to errors in the future
       "no-unused-vars": 1,
       "wrap-iife": 1,
-      "no-unused-expressions": 1
+      "no-unused-expressions": 1,
+
+      // After upgrading airbnb style:
+      "no-useless-return": 1,
+      "no-plusplus": 1,
+      "no-multi-assign": 1,
+      "no-bitwise": 1,
+      "import/no-dynamic-require": 1
     }
 };

@@ -7,13 +7,6 @@ module.exports = {
   },
   "rules": {
     "no-unused-expressions": "off",
-    "arrow-body-style": "off",
-
-    // After upgrading airbnb style:
-    "no-useless-return": 1,
-    "no-plusplus": 1,
-    "no-multi-assign": 1,
-    "no-bitwise": 1,
-    "import/no-dynamic-require": 1
+    "arrow-body-style": "off"
   }
 };
