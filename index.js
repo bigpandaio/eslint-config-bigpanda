@@ -14,6 +14,7 @@ module.exports = {
       "new-cap": 0,
       "eol-last": 0,
       "no-underscore-dangle": 0,
+      "no-plusplus": 0,
       "import/no-extraneous-dependencies": 0,
       "import/no-unresolved": 0,
 
@@ -22,7 +23,7 @@ module.exports = {
       "eqeqeq": 1,
       "func-names": 1,
       "no-param-reassign": 1,
-      "object-shorthand": [1, "never"],
+      "object-shorthand": [1, "consistent-as-needed"],
       "indent": [1, 2],
       "no-return-assign": 1,
       "no-confusing-arrow": 1,
