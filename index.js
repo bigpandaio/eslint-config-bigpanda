@@ -15,6 +15,7 @@ module.exports = {
       "eol-last": 0,
       "no-underscore-dangle": 0,
       "no-plusplus": 0,
+      "no-template-curly-in-string": 0,
       "import/no-extraneous-dependencies": 0,
       "import/no-unresolved": 0,
 
@@ -73,6 +74,8 @@ module.exports = {
       "operator-assignment": 1,
       "space-unary-ops": 1,
       "no-prototype-builtins": 1,
+      "no-multi-assign": 1,
+      "no-useless-return": 1,
       "import/newline-after-import": 1,
 
       // Auto-fixable
