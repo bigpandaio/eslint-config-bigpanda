@@ -25,7 +25,7 @@ module.exports = {
       "func-names": 1,
       "no-param-reassign": 1,
       "object-shorthand": [1, "consistent-as-needed"],
-      "indent": [1, 2],
+      "indent": [1, 2, { SwitchCase: 1 }],
       "no-return-assign": 1,
       "no-confusing-arrow": 1,
       "no-var": 1,
