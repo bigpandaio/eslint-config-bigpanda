@@ -15,6 +15,7 @@ module.exports = {
       "eol-last": 0,
       "no-underscore-dangle": 0,
       "no-plusplus": 0,
+      "no-template-curly-in-string": 0,
       "import/no-extraneous-dependencies": 0,
       "import/no-unresolved": 0,
 
@@ -22,6 +23,7 @@ module.exports = {
       "max-len": [1, 140],
       "eqeqeq": 1,
       "func-names": 1,
+      "function-paren-newline": 1,
       "no-param-reassign": 1,
       "object-shorthand": [1, "consistent-as-needed"],
       "indent": [1, 2],
@@ -43,8 +45,10 @@ module.exports = {
       "no-loop-func": 1,
       "prefer-rest-params": 1,
       "default-case": 1,
+      "object-curly-newline": 1,
       "padded-blocks": 1,
       "prefer-arrow-callback": 1,
+      "prefer-destructuring": 1,
       "quote-props": 1,
       "one-var": 1,
       "one-var-declaration-per-line": 1,
@@ -74,8 +78,6 @@ module.exports = {
       "space-unary-ops": 1,
       "no-prototype-builtins": 1,
       "import/newline-after-import": 1,
-
-      // Auto-fixable
       "quotes": 1,
       "object-curly-spacing": 1,
       "space-before-function-paren": 1,
@@ -89,6 +91,8 @@ module.exports = {
       "semi-spacing": 1,
       "no-trailing-spaces": 1,
       "arrow-parens": [1, "always"],
+      "no-multi-assign": 1,
+      "no-useless-return": 1,
 
       // TODO: turn to errors in the future
       "no-unused-vars": 1,
