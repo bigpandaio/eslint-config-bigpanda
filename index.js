@@ -97,6 +97,8 @@ module.exports = {
       // TODO: turn to errors in the future
       "no-unused-vars": 1,
       "wrap-iife": 1,
-      "no-unused-expressions": 1
+      "no-unused-expressions": 1,
+      "prefer-promise-reject-errors": 1,
+      "no-buffer-constructor": 1
     }
 };
