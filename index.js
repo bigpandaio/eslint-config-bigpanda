@@ -27,6 +27,10 @@ module.exports = {
       "no-param-reassign": 1,
       "object-shorthand": [1, "consistent-as-needed"],
       "indent": [1, 2, { SwitchCase: 1 }],
+      "object-curly-newline": [1, {
+        ObjectExpression: { consistent: true, multiline: true },
+        ObjectPattern: { consistent: true, multiline: true }
+      }],
       "no-return-assign": 1,
       "no-confusing-arrow": 1,
       "no-var": 1,
@@ -45,7 +49,6 @@ module.exports = {
       "no-loop-func": 1,
       "prefer-rest-params": 1,
       "default-case": 1,
-      "object-curly-newline": 1,
       "padded-blocks": 1,
       "prefer-arrow-callback": 1,
       "prefer-destructuring": 1,
