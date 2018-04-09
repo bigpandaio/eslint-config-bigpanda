@@ -96,6 +96,7 @@ module.exports = {
       "arrow-parens": [1, "always"],
       "no-multi-assign": 1,
       "no-useless-return": 1,
+      "jsx-a11y/label-has-for": 1,
 
       // TODO: turn to errors in the future
       "no-unused-vars": 1,
