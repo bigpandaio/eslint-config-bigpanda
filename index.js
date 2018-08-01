@@ -52,6 +52,7 @@ module.exports = {
       "jsx-a11y/no-noninteractive-element-to-interactive-role": 0,
       "jsx-a11y/no-noninteractive-tabindex": 0,
       "jsx-a11y/anchor-is-valid": 0,
+      "react/jsx-one-expression-per-line": 0,
 
       // Warnings
       "max-len": [1, 140],
