@@ -16,6 +16,7 @@ module.exports = {
       "no-underscore-dangle": 0,
       "no-plusplus": 0,
       "no-template-curly-in-string": 0,
+      "implicit-arrow-linebreak": 0,
       "import/no-extraneous-dependencies": 0,
       "import/no-unresolved": 0,
       "jsx-a11y/anchor-has-content": 0,
@@ -66,6 +67,7 @@ module.exports = {
         ObjectExpression: { consistent: true, multiline: true },
         ObjectPattern: { consistent: true, multiline: true }
       }],
+      "operator-linebreak": [1, "after", { overrides: { "=": "none" } }],
       "no-return-assign": 1,
       "no-confusing-arrow": 1,
       "no-var": 1,
