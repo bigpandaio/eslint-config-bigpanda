@@ -9,7 +9,7 @@ module.exports = {
         "stubPromise": true
     },
     "rules": {
-        "no-unused-expressions": "off",
-        "arrow-body-style": "off"
+        "arrow-body-style": 0,
+        "no-unused-expressions": 0
     }
 };
