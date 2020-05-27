@@ -5,6 +5,7 @@ module.exports = {
       "node": true,
       "mocha": true
     },
+    "plugins": ["custom-rules-bigpanda"],
     "rules": {
       // Overrides
       "comma-dangle": 0,
@@ -54,6 +55,7 @@ module.exports = {
       "jsx-a11y/no-noninteractive-tabindex": 0,
       "jsx-a11y/anchor-is-valid": 0,
       "react/jsx-one-expression-per-line": 0,
+      "custom-rules-bigpanda/no-constant-ft": 2,
 
       // Warnings
       "max-len": [1, 140],
