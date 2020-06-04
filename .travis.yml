@@ -1,3 +1,38 @@
+sudo: false
+dist: trusty
+group: travis_latest
 language: node_js
 node_js:
-- '4.2'
+- 8.9.0
+before_script:
+- mkdir -p $ARTIFACTS_PATH
+- npm version --no-git-tag-version $(git describe --abbrev=0 | tr -d v)
+- jq -n env | jq '. | with_entries(select(.key | startswith("TRAVIS")))' > ./ciMetadata.json
+jobs:
+  include:
+    before_deploy:
+    - eval "tar --transform 's,^\\.,${REPO_NAME},' $(cat .npmignore| sed 's/^/ --exclude
+      /g' | tr -d '\n') -zcf ${ARTIFACTS_PATH}.tar.gz ."
+    env:
+    - BUCKET_NAME=npm.bigpanda.io
+    - REGION_NAME=eu-west-1
+    - BUILD_PATH=library
+deploy:
+- provider: s3
+  bucket: "$BUCKET_NAME"
+  acl: private
+  region: "$REGION_NAME"
+  detect_encoding: true
+  local-dir: "$ARTIFACTS_MAIN_DIR"
+  skip_cleanup: true
+  access_key_id:
+    secure: a/fKmu4Y/Mzr+bzOQwaap1OUWYSGLs3c8PDUC68RhDshahFNxPVYFEspuBKw1oL22Fzj3t/M0kInGXJCYOwFgWDbJhm/2RnPRq4WXWoal6pOMZMGtDYDfwPssLsgg6NwfYRpT6W3g9TRkoj2detwMQ18vbT6AEmIozudibz5yR1QrtiZGirv5oQ/jd64+/cBMfwWBR3wFkXVdnPpa4HKqMp3U28ETBWwrvXKAamKW7C/b2MpWQXcZC5oHLf4jrfVbMqyeRf7W0w4rM6jVvnk6Cq22qBD+tb3PC3yUjTUJ/DogNkGm6lZ86I0EgbDuvlN9aQFy4FyrpOF/JoMeJGkAxv8fdayJQAmTHxy7UslzKPG38WiJM8uGRhh1o2iZdT7RQ02oiPphS123zNtCCXsVn0iWncE1xJ1NATmHqiV25pm+f/LBPvJPbBIAJOEzJLcs7BZLdOgBQxTTkD6pDZNFTLfgmvfwlczQpWArCQgUm7giG90/wdjLxNAzz0BIwdkeXReI92YMEnoDPH9Byo0sQQa7FyLR36kVjDsbybSC/vs9qfZWxhpp/OQdAbMBrw8ifqm0aTmS9GEuB1zsFRaOMqevZSXak+QbMJmdtmdtTaFEKK3tqPzSOyk87Fb2u5m5vE4LnSbZxTlqHGYuWPHgwoS/97V2+bDtpXwoN16CGk=
+  secret_access_key:
+    secure: m1yuj7LrOzlBFobSy+jq2tcFciW2IzD+K+efJWjnoLY2iBXAJM5Xc7pCWf2sfGmfWOsp2aZExqpsjqs/GerghdGbFhsX5STbY0VoTla5XClkmdbIQeEnLvXEtQLNjCQfDQfKCL9z9BGi+GAmDMuuWCsVvhi+g7zwwZhq7cZr4nPP1YxzamMiuj+zQThU8QSnFJ3Bykdv0HgQGISbIPSKF3KvOKch/EFNa1fQLjG+jVN3bC/TkXMXo1bGUdi/KLaxewecykVQ3f9kfoM1v9dCkz4p5neMcEB/QE4q5ZhlXu4k46UyYD3JP5nB8BxlssPDZZE6w5h/PlbRW1GZMxhCajKM/foegIghWUyvmaq3Y3zi/EvWnm2xW/jSL2KARDFMOlS0pnH2VH/WjHBB0BqO0e7kfmHQzjzPGRsyw1p7DkzlmIkiqg3XxIF8CqFsW9vo8+Wp7y49A5V8e1kg9ypfgHJWQjjFwKycbU4b7gCk/nhvVE5kJ00wLhRr26f8O9KEOlrxleIs/Ulzc23gGZLmyQ2VH6JFOft+RPIDJ0L1VhEQO2G0IkymB4RYTp8YK23VqI+WvXk4ged9NuOe8Yk2w+a4Uy5EQSa5TFf8LqA/Lr+sKpZO7LoiyOHVK+BWbXYWJaKvyf09PzRIlB/3/xwfBFCEK7+wBSpf07CbcVLe3QA=
+  on:
+    all_branches: true
+env:
+  global:
+  - ARTIFACTS_MAIN_DIR="./"
+  - REPO_NAME=${TRAVIS_REPO_SLUG##*\/}
+  - ARTIFACTS_PATH="${ARTIFACTS_MAIN_DIR}/${REPO_NAME}/${TRAVIS_TAG:-$TRAVIS_BRANCH}"

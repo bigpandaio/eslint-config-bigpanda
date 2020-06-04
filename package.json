@@ -6,6 +6,9 @@
     "type": "git",
     "url": "https://github.com/bigpandaio/eslint-config-bigpanda.git"
   },
+  "scrpts": {
+    "test": "echo 'no tests'"
+  },
   "devDependencies": {
     "eslint": "5.4.0",
     "eslint-config-airbnb": "17.1.0",
