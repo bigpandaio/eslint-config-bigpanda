@@ -5,6 +5,9 @@ module.exports = {
       "node": true,
       "mocha": true
     },
+    "plugins": [
+      "no-only-tests"
+    ],
     "rules": {
       // Overrides
       "comma-dangle": 0,
