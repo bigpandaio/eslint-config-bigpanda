@@ -143,5 +143,7 @@ module.exports = {
       "no-unused-expressions": 1,
       "prefer-promise-reject-errors": 1,
       "no-buffer-constructor": 1
+        
+      "no-only-tests/no-only-tests": "error"
     }
 };
