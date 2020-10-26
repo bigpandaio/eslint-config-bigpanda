@@ -142,7 +142,7 @@ module.exports = {
       "wrap-iife": 1,
       "no-unused-expressions": 1,
       "prefer-promise-reject-errors": 1,
-      "no-buffer-constructor": 1
+      "no-buffer-constructor": 1,
         
       "no-only-tests/no-only-tests": "error"
     }
